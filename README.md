@@ -1,4 +1,4 @@
-# Fafobot
+# Feedybot
 
 A small desktop social robot you can talk to — and, more importantly, a **reusable
 embodied conversational platform**. The same hardware and the same firmware become a
