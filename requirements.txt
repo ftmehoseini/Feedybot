@@ -1,0 +1,14 @@
+# Backend runtime dependencies.
+#
+# Deliberately short. Every entry earns its place: the three FastAPI/uvicorn/websockets
+# packages are the transport, pydantic is the validation that makes bad config fail at
+# startup, PyYAML reads Role Packs, and httpx is the async HTTP client every provider
+# adapter shares. Audio handling uses the standard library's `wave` and `struct` rather
+# than numpy or a DSP library, because 16-bit mono PCM does not need one.
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.30,<1.0
+websockets>=12.0,<16.0
+pydantic>=2.7,<3.0
+pydantic-settings>=2.3,<3.0
+PyYAML>=6.0,<7.0
+httpx>=0.27,<1.0
